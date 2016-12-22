@@ -1,0 +1,19 @@
+{
+  "name": "qasico",
+  "version": "1.0.0",
+  "description": "Qasico Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prawito/qasico.git"
+  },
+  "author": "Prawito Hudoro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prawito/qasico/issues"
+  },
+  "homepage": "https://github.com/prawito/qasico#readme"
+}

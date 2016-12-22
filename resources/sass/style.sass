@@ -1,0 +1,143 @@
+@import _variable
+@import _mixin
+
+body
+	margin: 0
+	background: white
+	font-family: roboto
+.bg-home
+	+bg-banner
+	background: url('../img/assets/bg_home.jpg') no-repeat
+.bg-signup
+	+bg-banner
+	background: url('../img/assets/bg_signup.jpg') no-repeat
+.bg-blue
+	background-color: rgba(40, 99, 249, 0.8)
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+button:hover
+	cursor: pointer
+
+.container
+	position: absolute
+	top: 0
+	left: 0
+	font-size: x-small
+	width: 100%
+.wrap
+	width: 65%
+	display: block
+	margin: 0 auto
+nav
+	display: flex
+	width: 100%
+	color: white
+	.header-logo
+		width: 30%
+		padding: 10px 0px
+		img
+			width: 12em
+	.header-menu
+		width: 70%
+		display: flex
+		padding: 10px
+		box-sizing: border-box
+		div:nth-child(1)
+			width: 80%
+			ul
+				display: flex
+				list-style: none
+				text-align: center
+				text-transform: uppercase
+				padding-left: 0px
+				li
+					margin-right: 30px
+					letter-spacing: 0.1em
+					&:hover
+						cursor: pointer
+					&.active
+						font-weight: bold
+						hr
+							width: 50%
+							margin-left: 40%
+		div:nth-child(2)
+			width: 20%
+			display: flex
+			align-items: flex-start
+			justify-content: center
+
+.content
+	display: flex
+	color: white
+	margin-top: 35px
+	.title-banner
+		width: 60%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		h1
+			font-size: xx-large
+			flex: 1
+			display: flex
+			align-items: flex-end
+			margin-bottom: 0px
+			margin-top: 130px
+		p
+			font-size: small
+			flex: 1
+			width: 85%
+		.button-banner
+			margin-top: 27px
+			flex: 1
+			.btn-learn
+				+btn($main-blue, white, $main-blue)
+				padding: 10px 25px
+				margin-right: 16px
+			.btn-download
+				+btn(white, $main-blue, $main-blue)
+				padding: 10px 25px
+	.phone
+		width: 40%
+		img
+			width: 25em
+			display: block
+			margin: 0 auto
+
+input[type="text"]
+	margin: 10px 0px
+	border-radius: 5px
+	padding: 15px
+	border: solid 1px #cacaca
+
+.box-signup
+	background: white
+	color: $main-black
+	border-radius: 4px
+	padding: 36px
+	display: flex
+	flex-direction: column
+	margin-left: 20px
+	height: 405px
+	width: 250px
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+	input[type="checkbox"]
+		margin-top: 20px
+	span
+		font-size: small
+	.btn-signup
+		+btn(white, $main-blue, $main-blue)
+		padding: 16px 20px
+		font-weight: bold
+		margin: 0 auto
+		margin-top: 35px
+		display: block
+.btn-header
+	+btn(transparent, white, white)
+	padding: 7px 13px
+	font-size: x-small
+	&.btn-active
+		+btn(white, $main-blue, white)

@@ -1,0 +1,19 @@
+=btn($background, $color, $border)
+	text-transform: uppercase
+	border-radius: 25px
+	background: $background
+	color: $color
+	border: solid 2px $border
+	&:hover
+		background: darken($background, 8)
+		color: darken($color, 8)
+		transition: all 0.3s ease
+	&:active
+		outline: none
+		background: darken($background, 10)
+		color: darken($color, 10)
+		transition: all 0.3s ease
+=bg-banner
+	background-size: cover
+	height: 450px
+	position: relative
