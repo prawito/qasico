@@ -17,3 +17,13 @@
 	background-size: cover
 	height: 450px
 	position: relative
+
+=keyframes($name)
+	@-webkit-keyframes #{$name}
+		@content
+	@-moz-keyframes #{$name}
+		@content
+	@-ms-keyframes #{$name}
+		@content
+	@keyframes #{$name}
+		@content

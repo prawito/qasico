@@ -1,4 +1,4 @@
-var app = angular.module('qasicoApp', ['ui.router']);
+var app = angular.module('qasicoApp', ['ngAnimate', 'ui.router']);
 
 app.config(function($urlRouterProvider, $stateProvider){
 	$urlRouterProvider.otherwise('/home');
@@ -19,8 +19,14 @@ app.config(function($urlRouterProvider, $stateProvider){
 	});
 })
 
-app.controller('qasicoCtrl', ['$scope', function($scope){
+app.controller('qasicoCtrl', ['$scope', '$interval', function($scope, $interval){
 	$scope.tabs = {};
+	$scope.anim = false;
+	$interval(function () {
+        if ($scope.anim === false) {
+			$scope.anim = true;
+		}else $scope.anim = false;
+    }, 2000);
 }]);
 
 app.controller('homeCtrl', ['$scope', function($scope){
