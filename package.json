@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/prawito/qasico/issues"
   },
-  "homepage": "https://github.com/prawito/qasico#readme"
+  "homepage": "https://github.com/prawito/qasico#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-uglify": "^2.0.0"
+  }
 }

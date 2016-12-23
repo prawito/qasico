@@ -1,0 +1,41 @@
+<div ng-class="tabs.selected == 'home' ? 'bg-home' : 'bg-signup'">
+    <div class="bg-blue"></div>
+</div>
+<div class="container">
+    <div class="wrap">
+        <nav>
+            <div class="header-logo">
+                <img src="img/assets/logo.png">
+            </div>
+            <div class="header-menu">
+                <div>
+                    <ul>
+                        <li ui-sref="main.home" ng-class="tabs.selected == 'home' ? 'active' : ''">home
+                            <hr ng-if="tabs.selected == 'home'">
+                        </li>
+                        <li>features</li>
+                        <li>testimonials</li>
+                        <li>screenshots</li>
+                        <li>pricing</li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="btn-header" ui-sref="main.signup" ng-class="tabs.selected == 'signup' ? 'btn-active': ''">sign up</button>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="title-banner">
+                <h1>Meet BestApp <br> The new world for chat</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos adipisci, voluptatibus provident, dolorum voluptas deleniti iste officia sed fugiat vel minima culpa eos ratione, quisquam quibusdam odio nisi atque et!</p>
+                <div class="button-banner">
+                    <button class="btn-learn">learn more</button>
+                    <button class="btn-download">download app</button>
+                </div>
+            </div>
+            <div class="phone">
+            	<ui-view></ui-view>
+            </div>
+        </div>
+    </div>
+</div>

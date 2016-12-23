@@ -1,6 +1,6 @@
 var app = angular.module('qasicoApp', ['ngAnimate', 'ui.router']);
 
-app.config(function($urlRouterProvider, $stateProvider){
+app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider){
 	$urlRouterProvider.otherwise('/home');
 	$stateProvider
 	.state('main', {
@@ -17,7 +17,7 @@ app.config(function($urlRouterProvider, $stateProvider){
 		templateUrl: 'tpl/signup.html',
 		controller: 'signupCtrl'
 	});
-})
+}]);
 
 app.controller('qasicoCtrl', ['$scope', '$interval', function($scope, $interval){
 	$scope.tabs = {};
@@ -35,4 +35,4 @@ app.controller('homeCtrl', ['$scope', function($scope){
 
 app.controller('signupCtrl', ['$scope', function($scope){
 	$scope.tabs.selected = 'signup';
-}])
+}]);
