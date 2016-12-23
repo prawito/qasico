@@ -26,7 +26,7 @@ app.controller('qasicoCtrl', ['$scope', '$interval', function($scope, $interval)
         if ($scope.anim === false) {
 			$scope.anim = true;
 		}else $scope.anim = false;
-    }, 2000);
+    }, 3000);
 }]);
 
 app.controller('homeCtrl', ['$scope', function($scope){
